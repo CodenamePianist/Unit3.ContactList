@@ -9,10 +9,19 @@ function App() {
   return (
     <>
       {selectedContactId ? (
-        <SelectedContact
-          selectedContactId={selectedContactId}
-          setSelectedContactId={setSelectedContactId}
-        />
+        <div>
+          <SelectedContact
+            selectedContactId={selectedContactId}
+            setSelectedContactId={setSelectedContactId}
+          />
+          <button
+            onClick={() => {
+              setSelectedContactId(null);
+            }}
+          >
+            Click me!
+          </button>
+        </div>
       ) : (
         <ContactList setSelectedContactId={setSelectedContactId} />
       )}
