@@ -18,5 +18,16 @@ export default function SelectedContact({
     }
     fetchContact();
   }, []);
-  return <p>{contact ? contact.name : `I have no idea`}</p>;
+  return (
+    <>
+      {contact && (
+        <div>
+          <p>{contact.name}</p>
+          <p>{contact.website}</p>
+          <p>{contact.company.name}</p>
+          <p>{contact.address.street}</p>
+        </div>
+      )}
+    </>
+  );
 }
