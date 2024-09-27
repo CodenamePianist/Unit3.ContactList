@@ -14,13 +14,15 @@ function App() {
             selectedContactId={selectedContactId}
             setSelectedContactId={setSelectedContactId}
           />
-          <button
-            onClick={() => {
-              setSelectedContactId(null);
-            }}
-          >
-            Click me!
-          </button>
+          <div className="btn">
+            <button
+              onClick={() => {
+                setSelectedContactId(null);
+              }}
+            >
+              Click me!
+            </button>
+          </div>
         </div>
       ) : (
         <ContactList setSelectedContactId={setSelectedContactId} />

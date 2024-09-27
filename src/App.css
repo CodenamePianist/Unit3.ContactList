@@ -15,3 +15,24 @@ td {
   border: 2px solid pink;
   padding: 1rem;
 }
+
+td:hover {
+  cursor: crosshair;
+  transform: scale(1.2);
+  text-decoration: overline underline;
+}
+
+.single p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+button:hover {
+  cursor: crosshair;
+}
